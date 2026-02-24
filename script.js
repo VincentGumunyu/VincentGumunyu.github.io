@@ -184,55 +184,9 @@ document.querySelectorAll(".project-card, .skill-category, .highlight-item, .con
   observer.observe(el);
 });
 
-// ─── CONTACT FORM ───
-/*
-async function handleFormSubmit(e) {
-  e.preventDefault();
-  const form = e.target;
-  const btn = document.getElementById("form-submit-btn");
-  const submitText = document.getElementById("submit-text");
-  
-  btn.disabled = true;
-  submitText.textContent = "Sending...";
-
-  const formData = new FormData(form);
-  
-  try {
-    const response = await fetch("https://formspree.io/gumunyuvincent@gmail.com", {
-      method: "POST",
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-    
-    if (response.ok) {
-      form.reset();
-      document.getElementById("form-success").style.display = "block";
-      document.getElementById("form-success").textContent = "✅ Thank you! Your message has been sent. I'll get back to you soon.";
-    } else {
-      const data = await response.json();
-      if (Object.hasOwn(data, 'errors')) {
-        alert(data["errors"].map(error => error["message"]).join(", "));
-      } else {
-        alert("Oops! There was a problem submitting your form");
-      }
-    }
-  } catch (error) {
-    alert("Oops! There was a problem submitting your form");
-  } finally {
-    btn.disabled = false;
-    submitText.textContent = "Send Message";
-    setTimeout(() => {
-      document.getElementById("form-success").style.display = "none";
-    }, 5000);
-  }
-}
-
-document.getElementById("contact-form").addEventListener("submit", handleFormSubmit);
-*/
 
 // ─── PROFILE IMAGE FALLBACK ───
+
 // If user places their photo in assets/profile.jpg, this will display it.
 // Otherwise show an initials avatar placeholder.
 document.querySelectorAll(".profile-img, #about-photo").forEach(img => {
