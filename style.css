@@ -809,7 +809,8 @@ body {
   gap: 24px;
 }
 
-.prof-bar-item {}
+
+
 
 .prof-label {
   display: flex;
@@ -1107,6 +1108,22 @@ body {
 
 .contact-card-icon.facebook svg {
   color: #1877f2;
+}
+
+.contact-card-icon.email {
+  background: rgba(45, 156, 219, 0.12);
+}
+
+.contact-card-icon.email svg {
+  color: #2d9cdb;
+}
+
+.contact-card-icon.phone {
+  background: rgba(108, 92, 231, 0.12);
+}
+
+.contact-card-icon.phone svg {
+  color: #6c5ce7;
 }
 
 /* Private project badges & notice */
