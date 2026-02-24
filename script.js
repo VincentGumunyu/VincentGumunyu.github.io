@@ -185,17 +185,18 @@ document.querySelectorAll(".project-card, .skill-category, .highlight-item, .con
 });
 
 // ─── CONTACT FORM ───
+/*
 async function handleFormSubmit(e) {
   e.preventDefault();
   const form = e.target;
   const btn = document.getElementById("form-submit-btn");
   const submitText = document.getElementById("submit-text");
-
+  
   btn.disabled = true;
   submitText.textContent = "Sending...";
 
   const formData = new FormData(form);
-
+  
   try {
     const response = await fetch("https://formspree.io/gumunyuvincent@gmail.com", {
       method: "POST",
@@ -204,7 +205,7 @@ async function handleFormSubmit(e) {
         'Accept': 'application/json'
       }
     });
-
+    
     if (response.ok) {
       form.reset();
       document.getElementById("form-success").style.display = "block";
@@ -228,8 +229,8 @@ async function handleFormSubmit(e) {
   }
 }
 
-// Re-attach the event listener since we removed onsubmit from HTML
 document.getElementById("contact-form").addEventListener("submit", handleFormSubmit);
+*/
 
 // ─── PROFILE IMAGE FALLBACK ───
 // If user places their photo in assets/profile.jpg, this will display it.
