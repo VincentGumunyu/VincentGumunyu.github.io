@@ -229,7 +229,7 @@ async function handleFormSubmit(e) {
 }
 
 // Re-attach the event listener since we removed onsubmit from HTML
-// document.getElementById("contact-form").addEventListener("submit", handleFormSubmit);
+document.getElementById("contact-form").addEventListener("submit", handleFormSubmit);
 
 // ─── PROFILE IMAGE FALLBACK ───
 // If user places their photo in assets/profile.jpg, this will display it.
