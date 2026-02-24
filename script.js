@@ -197,7 +197,7 @@ async function handleFormSubmit(e) {
   const formData = new FormData(form);
 
   try {
-    const response = await fetch("https://formspree.io/f/mqaegeyz", {
+    const response = await fetch("https://formspree.io/gumunyuvincent@gmail.com", {
       method: "POST",
       body: formData,
       headers: {
